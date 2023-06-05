@@ -34,9 +34,7 @@ form.addEventListener('submit', function(e) {
     nomeBeneficiario.addEventListener('keyup', function(e) {
         console.log(e.target.value);
         formValido = validaNome(e.target.value)
-
-    })
-
+    
     if (!formValido) {
         nomeBeneficiario.style.border = '1px solid red';
         document.querySelector('.mensagem-erro').style.display = 'block';
@@ -45,6 +43,8 @@ form.addEventListener('submit', function(e) {
         nomeBeneficiario.style = '';
         document.querySelector('.mensagem-erro').style.display = 'none';
     }
+})
+
 
 
 
